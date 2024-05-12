@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>PhytoPatholoBots (PPB) - el766@cornell.edu</title>
-<meta name="description" content="">
+<!-- begin _includes/seo.html --><title>Robotics Summit &amp; Expo recap - el766@cornell.edu</title>
+<meta name="description" content="May 11th, 2024">
 
 
   <meta name="author" content="Ertai Liu">
@@ -22,21 +22,19 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="el766@cornell.edu">
-<meta property="og:title" content="PhytoPatholoBots (PPB)">
-<meta property="og:url" content="http://localhost:4000/projects/2020-07-20-PPB/">
+<meta property="og:title" content="Robotics Summit &amp; Expo recap">
+<meta property="og:url" content="http://localhost:4000/Robotics-Summit-&-Expo/">
 
 
-  <meta property="og:description" content="">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/images/PPB/DSC_1204.JPG">
+  <meta property="og:description" content="May 11th, 2024">
 
 
 
 
 
-  <meta property="article:published_time" content="2020-07-20T00:00:00-05:00">
+
+
+  <meta property="article:published_time" content="2024-05-11T00:00:00-05:00">
 
 
 
@@ -47,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/projects/2020-07-20-PPB/">
+<link rel="canonical" href="http://localhost:4000/Robotics-Summit-&-Expo/">
 
 
 
@@ -139,24 +137,6 @@
 
     <div class="initial-content">
       
-  
-
-
-
-
-
-
-
-<div class="page__hero"
-  style=" background-image: url('');"
->
-  
-    <img src="/assets/images/PPB/DSC_1204.JPG" alt="PhytoPatholoBots (PPB)" class="page__hero-image">
-  
-  
-</div>
-
-
 
 
 
@@ -178,7 +158,7 @@
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p>I’m currently a 3<sup>rd</sup> year Ph.D. candidtate at Cornell University. I’m working on a general robotic platform for crop management.</p>
+        <p>I’m currently a 4<sup>th</sup> year Ph.D. candidtate at Cornell University. I’m working on a general robotic platform for crop management.</p>
 
       </div>
     
@@ -330,16 +310,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="PhytoPatholoBots (PPB)">
-    <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2020-07-20T00:00:00-05:00">
+    <meta itemprop="headline" content="Robotics Summit &amp; Expo recap">
+    <meta itemprop="description" content="May 11th, 2024">
+    <meta itemprop="datePublished" content="2024-05-11T00:00:00-05:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/projects/2020-07-20-PPB/" class="u-url" itemprop="url">PhytoPatholoBots (PPB)
+            <a href="http://localhost:4000/Robotics-Summit-&-Expo/" class="u-url" itemprop="url">Robotics Summit &amp; Expo recap
 </a>
           </h1>
           
@@ -350,16 +330,23 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p><img src="" alt="" /></p>
+        <p>May 11th, 2024</p>
 
-<p>This is the first version of my general robotic platform. The name “PhytoPatholoBots” represents its mission: it is a robot designed for plant pathology information gathering using proximal sensing and computer vision methods.</p>
+<p>Several days ago, I had the pleasure of introducing our latest agricultural robotic innovation at the Form and Function Challenge during the Robotic Summit &amp; Expo in Boston! Our new design prioritizes cost and energy efficiency while enhancing performance in navigating narrow and rugged agricultural terrain, particularly in vineyards. Using this concept, we constructed a compact 3D printed model car and were thrilled to witness its seamless execution of zero-point turns and Ackermann-like steering across diverse environments.</p>
 
-<p>Our recent findings indicate that strobe light enhanced camera is a critical tool for in-field stable image-based information analysis. We designed a specific power supply and control system to support the strobe light camera. The camera is controlled by the Nvidia Jetson Xavier AGX onboard computer. Our design concept is that the robot should perform information analysis using on-board resources only. Although transferring the data to cloud may reduce design difficulty and allow higher analysis performance, we found that it is very challenging to handle such a high data flow with limited in-field infrastructure. Therefore, we deployed the <a href="/projects/2020-03-01-Fast-Disease-Detection/">fast disease detection</a> algorithm onboard to ensure timely analysis. This system can be extended to other image-based tasks such as pruning analysis and yield predictions. 
-<img src="http://localhost:4000/assets/images/PPB/DSC_1372.JPG" alt="" /></p>
+<p>The whole competition was very joyful, and we received much more than we expected. There are visotors stoping by our booths throughout the time, engaging with our presentation and offering invaluable suggestions. We forged connections with robotic component suppliers, like-minded companies, patent lawyers, and journalists, receiving insightful feedback on both our robotic design and business strategies. Additionally, we relished the opportunity of enjoying the exhibitions of the Robotics Summit &amp; Expo, all at no cost!</p>
 
-<p>When deployed in the field, the robot is usually driven autonomously. For the past years we have relied on the simple RTK-GPS based navigation algorithm. It was accurate and reliable as long as the RTK signal is reliable, yet it also made the RTK signal a hard-to-guarantee single point failure. Moreover, the high cost of RTK system prevented most of growers from using them. Therefore, we developed an easy to deploy vision based autonomous navigation algorithm. The algorithm is currently still under the test, and we still need to solve the associated localization problem, but I believe that it will be the future of autonomous agriculture vehicles.</p>
+<p>There is one technical lesson that we learned though. We wanted our small robot car to traverse in a rectangular patter on the booth by tracking the AprilTag. However we found that the motion blur of camera images made the tracking very unstable, partially due to the change of ambient light in the exhibition hall. Ideally we could have changed the tag patterns to a simpler, less informative but more robust one to overcome this issue, but unfortunately we were too late to find out this problem.</p>
 
-<p>Currently, the PPB is designed on top of the Clearpath Husky robotic base. It is a 4-wheel differential drive robot. It is simple and it does the work. Moreover, it has good tech support (especially when you are not paying for it). However, we noticed the natural issue of deploying differential drive robots into the field, and we are planning to make changes.</p>
+<p>If you have a robotic idea that you want to try out, I would definately encourage you to apply. The application is very easy. It is just a google form describing briefly about what’s the purpose and the design concept of your robot. You will hear back from them within several days after the application deadline. You do need to specify how you would like to use the components from sponsors. This competition has sponsors from almost all aspects of robotics and they are all very easy to reach out and they are committed to help you!</p>
+
+<p>I’ve also put together a short video capturing our experience at the event and our project. Should you wish to learn more about our journey or express interest in our robot, please don’t hesitate to reach out. We’re eager to share our experiences and insights with you!</p>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/PyDf2UOSq90" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
 
 
         
@@ -372,7 +359,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2020-07-20T00:00:00-05:00">July 20, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2024-05-11T00:00:00-05:00">May 11, 2024</time></p>
 
       </footer>
 
@@ -381,23 +368,22 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=PhytoPatholoBots+%28PPB%29%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F2020-07-20-PPB%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Robotics+Summit+%26+Expo+recap%20http%3A%2F%2Flocalhost%3A4000%2FRobotics-Summit-%26-Expo%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F2020-07-20-PPB%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FRobotics-Summit-%26-Expo%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F2020-07-20-PPB%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2FRobotics-Summit-%26-Expo%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/projects/2020-03-01-Fast-Disease-Detection/" class="pagination--pager" title="Fast Disease Detection Network
+      <a href="/IROS2023/" class="pagination--pager" title="IROS2023 Presentation
 ">Previous</a>
     
     
-      <a href="/projects/2023-03-01-Visual-Navigation/" class="pagination--pager" title="Visual Navigation
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -406,6 +392,37 @@
     
   </article>
 
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/IROS2023/" rel="permalink">IROS2023 Presentation
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">October 5th, 2023
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
   
   
 </div>
@@ -419,7 +436,7 @@
         <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->
-        <div class="page__footer-copyright">&copy; 2023 Ertai Liu. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+        <div class="page__footer-copyright">&copy; 2024 Ertai Liu. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
