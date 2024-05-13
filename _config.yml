@@ -17,8 +17,8 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "el766@cornell.edu"
-title_separator          : "-"
+title                    : ""
+title_separator          : " "
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Ertai Liu"
 description              : "Ertai Liu's personal website"
