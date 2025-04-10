@@ -1,0 +1,22 @@
+---
+title: "PhytoPatholoBots"
+completionDate: "2024-03-01"
+category: "robotics"
+tags: ["ground robot", "disease detection"]
+summary: "A robotic platform designed for plant pathology information gathering using proximal sensing and computer vision methods."
+image: "/images/projects/PPB/Teaser.png"
+---
+
+
+
+# The Future of Agricultural Robotics: Trends and Developments
+
+This is the first version of my general robotic platform. The name "PhytoPatholoBots" represents its mission: it is a robot designed for plant pathology information gathering using proximal sensing and computer vision methods. 
+
+Our recent findings indicate that strobe light enhanced camera is a critical tool for in-field stable image-based information analysis. We designed a specific power supply and control system to support the strobe light camera. The camera is controlled by the Nvidia Jetson Xavier AGX onboard computer. Our design concept is that the robot should perform information analysis using on-board resources only. Although transferring the data to cloud may reduce design difficulty and allow higher analysis performance, we found that it is very challenging to handle such a high data flow with limited in-field infrastructure. Therefore, we deployed the [fast disease detection](/projects/Fast-Disease-Detection/) algorithm onboard to ensure timely analysis. This system can be extended to other image-based tasks such as pruning analysis and yield predictions. 
+
+<img src="/images/projects/PPB/DSC_1372.JPG" alt="PPB">
+
+When deployed in the field, the robot is usually driven autonomously. For the past years we have relied on the simple RTK-GPS based navigation algorithm. It was accurate and reliable as long as the RTK signal is reliable, yet it also made the RTK signal a hard-to-guarantee single point failure. Moreover, the high cost of RTK system prevented most of growers from using them. Therefore, we developed an easy to deploy vision based autonomous navigation algorithm. The algorithm is currently still under the test, but I believe that it will be the future of autonomous agriculture vehicles. 
+
+Currently, the PPB is designed on top of the Clearpath Husky robotic base. It is a 4-wheel differential drive robot. It is simple and it does the work. However, we also noticed the issues of deploying differential drive robots into the field, and we are planning to make changes.
