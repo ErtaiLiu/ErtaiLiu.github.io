@@ -330,7 +330,7 @@ Ultimately, the choice between big tractors and small robots will depend on a fa
 title: "Vineyard Disease Economic Analysis"
 publishDate: "2025-05-13"
 category: "Economics"
-summary: "An in-depth analysis comparing the efficiency, costs, environmental impact, and practicality of using small autonomous robot fleets versus traditional large tractors in modern large-scale farming operations."
+summary: "Vineyard diseases have quietly drained billions from the global wine industry, yet their full economic impact remains poorly understood. This piece is a step toward giving that hidden cost the attention it deserves."
 image: "/images/articles/20250513/cab_franc_glrav3_2018_0.jpg"
 ---
 
